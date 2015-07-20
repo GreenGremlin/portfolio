@@ -183,7 +183,9 @@ h5 {
 .cronological-item .cronological-description {
   min-width: 280px;
 }
+.cronological-item .company {
+  display: block;
+}
 .education h4 {
   font-style: normal;
-  font-weight: normal;
 }
