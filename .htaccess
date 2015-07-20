@@ -1,0 +1,6 @@
+<IfModule mod_alias.c>
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+RewriteBase /
+RewriteRule ^resume.([A-Za-z0-9]+)$ resume/index.php?format=$1
+</IfModule>

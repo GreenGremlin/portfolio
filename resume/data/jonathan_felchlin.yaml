@@ -39,7 +39,7 @@ sections:
         title: "UX Developer"
         company: "Zillow"
         location: "Seattle, WA"
-        description: "Worked with a small team of developers, using Agile methods, to build client-facing web tools and services. At the enterprise level, I helped drive the adoption of tools such as LESS, Mustache templating, an enterprise style-guide, and modern coding standards."
+        description: "Worked with a small team of developers, using Agile methods, to build client-facing web tools and services. At the enterprise level, I helped drive the adoption of tools such as LESS, Mustache templates, an enterprise style-guide, and modern coding standards."
         expertise: "Javascript, responsive LESS/CSS, Python, Java, Git, YUI, TurboGears, Node"
         projects: "schools rewrite, home values rewrite, sitewide responsive navigation, Zillow.com homepage redesign"
       - date: "2011 – 2012"

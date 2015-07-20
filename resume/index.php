@@ -10,6 +10,8 @@
     $phone_match = '~.*(\d{3})[^\d]{,7}(\d{3})[^\d]{,7}(\d{4}).*~';
     $phone_replace = '($1) $2-$3';
 
+    $template_suffix = $_GET[ 'format' ] && $_GET[ 'format' ] != 'htm' ? '.' . $_GET[ 'format' ] : '';
+
     $mustache = new Mustache_Engine(array(
         'template_class_prefix' => '__MyTemplates_',
         'cache' => dirname(__FILE__).'/tmp/cache/mustache',
@@ -49,10 +51,11 @@
         if ($section["type"] == NULL) {
             $section["type"] = "section";
         }
-        $partial = $mustache->loadTemplate($section["type"]);
+
+        $partial = $mustache->loadTemplate($section["type"].$template_suffix);
         $section["rendered_content"] = $partial->render($section);
     }
 
-    $tpl = $mustache->loadTemplate('resume');
+    $tpl = $mustache->loadTemplate('resume'.$template_suffix);
     echo $tpl->render($data);
 ?>
