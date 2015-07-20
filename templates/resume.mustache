@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+
+    <head>
+        <title>Resume 2015</title>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+        <link href='http://fonts.googleapis.com/css?family=Muli|Open+Sans:400italic,600italic,600,400|Varela+Round|Enriqueta' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/resume.css" />
+        <link rel="stylesheet" href="css/desktop.css" media="print, screen and (min-width: 420px)" />
+    </head>
+    <body>
+        <header class="resume-header">
+            <div class="header-section header-left">
+                <h1>{{name}}</h1>
+                <h2>{{title}}</h2>
+            </div>
+            <div class="header-section header-right contact-info">
+                <a href="mailto:{{ email }}">{{email}}</a>
+                <a href="tel:+{{ phone }}">{{phone_formatted}}</a>
+            </div>
+        </header>
+        {{#sections}}
+        <div class="resume-content">
+            <h3>{{title}}</h3></p>
+            {{{rendered_content}}}
+        </div>
+        {{/sections}}
+    </body>
+</html>

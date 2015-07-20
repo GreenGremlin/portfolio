@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mustache/mustache": "~2.5",
+        "symfony/yaml": "2.6.3"
+    }
+}

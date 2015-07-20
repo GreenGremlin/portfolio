@@ -1,0 +1,33 @@
+@media all and (min-width: 461px) {
+  .cronological-item {
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .cronological-item .cronological-dates,
+  .cronological-item .cronological-description {
+    -webkit-flex-basis: 280px;
+    -moz-flex-basis: 280px;
+    -ms-flex-basis: 280px;
+    flex-basis: 280px;
+    padding: 0 1%;
+  }
+  .cronological-item .cronological-dates {
+    -webkit-flex-basis: 120px;
+    -moz-flex-basis: 120px;
+    -ms-flex-basis: 120px;
+    flex-basis: 120px;
+    max-width: 8.12em;
+    text-align: right;
+    border-right: 2px solid #ccc;
+  }
+  .cronological-item .cronological-dates .time-length {
+    display: block;
+  }
+}
+@media print {
+  .cronological-item .cronological-dates {
+    max-width: 7.62em;
+  }
+}

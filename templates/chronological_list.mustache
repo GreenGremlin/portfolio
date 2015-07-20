@@ -1,0 +1,26 @@
+<ul class="resume-description chronological-list{{#class}} {{.}}{{/class}}">
+    {{#content}}
+    <li class="cronological-item">
+        <div class="cronological-dates">
+            <h5>{{date}}{{#dateInfo}} <span class="time-length">{{.}}</span>{{/dateInfo}}</h5>
+        </div>
+        <div class="cronological-description">
+            {{#title}}
+            <h4>{{.}}{{#company}} / {{.}}{{/company}}{{#location}}, {{.}}{{/location}}</h4>
+            {{/title}}
+
+            {{#description}}
+            <p>{{.}}</p>
+            {{/description}}
+
+            {{#expertise}}
+            <p>Related expertise: <span class="inline-list">{{.}}</span></p>
+            {{/expertise}}
+
+            {{#projects}}
+            <p>Key projects: <span class="inline-list">{{.}}</span></p>
+            {{/projects}}
+        </div>
+    </li>
+    {{/content}}
+</ul>

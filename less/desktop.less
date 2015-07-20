@@ -1,0 +1,32 @@
+
+@import "flexbox";
+@import "variables";
+
+@media all and (min-width: (@dates-width + @description-width + (@page-margin-small * 2) + 1px)) {
+    .cronological-item {
+        .flex-wrap(nowrap);
+
+        .cronological-dates,
+        .cronological-description {
+            .flex-basis(@description-width);
+            padding: 0 @horizontal-spacing/2;
+        }
+        .cronological-dates {
+            .flex-basis(@dates-width);
+            max-width: 8.12em;
+            text-align: right;
+            border-right: 2px solid #ccc;
+
+            .time-length {
+                display: block;
+            }
+        }
+    }
+}
+@media print {
+    .cronological-item {
+        .cronological-dates {
+            max-width: 7.62em;
+        }
+    }
+}

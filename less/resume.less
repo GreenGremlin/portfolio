@@ -1,0 +1,163 @@
+
+@import "flexbox";
+@import "variables";
+
+* {
+    box-sizing: border-box;
+}
+@page {
+    margin: 0.75in 0.75in 0.5in;
+}
+
+body, p, h1, h2, h3, h4, h5, h4, h5, h6 {
+    font-size: 16px;
+    line-height: @line-height;
+}
+body {
+    font-family: "Open Sans";
+    color: #000;
+    padding: @page-margin-medium;
+    max-width: @max-page-width;
+    margin: 0 auto;
+
+    @media @small-screen {
+        padding: @page-margin-small;
+    }
+    @media screen {
+        &.print-preview{
+            max-width: 511.2pt + 2 * 50.4pt;
+            padding: @page-margin-large;
+        }
+    }
+    @media print {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+p, h3, h4, h5, h4, h5, h6, li {
+    margin-bottom: @block-margin;
+    page-break-inside: avoid;
+}
+h3, h4 {
+    page-break-after: avoid;
+}
+
+h1 {
+    font-size: 2.25em;
+    line-height: 1.334em;
+    margin: 0;
+    font-family: "Muli";
+    vertical-align: baseline;
+}
+h2 {
+    font-size: 1.125em;
+    line-height: 1.334em;
+    margin: 0;
+    padding: 0 0 10pt;
+    color: #666666;
+    font-style: italic;
+    font-weight: 600;
+}
+h3 {
+    margin: 0 0 0.5em;
+    padding: 0.75em 0 0.25em;
+    color: #434343;
+    font-size: 1.25em;
+    font-family: "Enriqueta";
+    border-bottom: 2px solid @header-border-color;
+}
+h4 {
+    padding-top: 0pt;
+    font-style: italic;
+    font-size: 1em;
+    font-weight: 600;
+}
+h5 {
+    font-family: "Varela Round";
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.inline-list {
+    font-style: italic;
+}
+
+.resume-header {
+    .flex-display;
+    .flex-flow(row wrap);
+    .justify-content(space-between);
+
+    .header-section {
+        .flex;
+    }
+    .header-left {
+        padding-right: @horizontal-spacing;
+    }
+    .contact-info {
+        a {
+            display: block;
+        }
+    }
+}
+
+.resume-description {
+    padding: 0 @horizontal-spacing;
+}
+
+.simple-list {
+    .flex-display;
+    .flex-flow(row wrap);
+    list-style-type: none;
+    padding: 0 @horizontal-spacing/2;
+
+    > li {
+        padding: 0 2%;
+        width: 100%/3;
+
+        @media @medium-screen {
+            width: 100%/2;
+        }
+
+        @media @small-screen {
+            width: 100%;
+        }
+
+        &:before {
+            content: "\0025cf  ";
+        }
+    }
+}
+
+.cronological-items {
+    list-style-type: none;
+}
+.cronological-item {
+    .flex-display;
+    .flex-flow(row wrap);
+    page-break-inside: auto;
+
+    .cronological-dates,
+    .cronological-description {
+        .flex(1 0 100%);
+    }
+
+    .cronological-dates {
+        // min-width: @dates-width;
+
+        .time-length {
+            font-size: 11pt;
+            font-style: italic;
+        }
+    }
+    .cronological-description {
+        min-width: @description-width;
+    }
+}
+
+.education {
+    h4 {
+        font-style: normal;
+    }
+}
+

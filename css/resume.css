@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+@page {
+  margin: 0.75in 0.75in 0.5in;
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+body {
+  font-family: "Open Sans";
+  color: #000;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 512px) {
+  body {
+    padding: 30px;
+  }
+}
+@media screen {
+  body.print-preview {
+    max-width: 612pt;
+    padding: 50.4pt;
+  }
+}
+@media print {
+  body {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+p,
+h3,
+h4,
+h5,
+h4,
+h5,
+h6,
+li {
+  margin-bottom: 0.75em;
+  page-break-inside: avoid;
+}
+h3,
+h4 {
+  page-break-after: avoid;
+}
+h1 {
+  font-size: 2.25em;
+  line-height: 1.334em;
+  margin: 0;
+  font-family: "Muli";
+  vertical-align: baseline;
+}
+h2 {
+  font-size: 1.125em;
+  line-height: 1.334em;
+  margin: 0;
+  padding: 0 0 10pt;
+  color: #666666;
+  font-style: italic;
+  font-weight: 600;
+}
+h3 {
+  margin: 0 0 0.5em;
+  padding: 0.75em 0 0.25em;
+  color: #434343;
+  font-size: 1.25em;
+  font-family: "Enriqueta";
+  border-bottom: 2px solid #38761d;
+}
+h4 {
+  padding-top: 0pt;
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 600;
+}
+h5 {
+  font-family: "Varela Round";
+  font-size: 1em;
+  font-weight: normal;
+}
+.inline-list {
+  font-style: italic;
+}
+.resume-header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+.resume-header .header-section {
+  -webkit-flex: initial;
+  -moz-flex: initial;
+  -ms-flex: initial;
+  flex: initial;
+}
+.resume-header .header-left {
+  padding-right: 2%;
+}
+.resume-header .contact-info a {
+  display: block;
+}
+.resume-description {
+  padding: 0 2%;
+}
+.simple-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  list-style-type: none;
+  padding: 0 1%;
+}
+.simple-list > li {
+  padding: 0 2%;
+  width: 33.33333333%;
+}
+@media screen and (max-width: 768px) {
+  .simple-list > li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 512px) {
+  .simple-list > li {
+    width: 100%;
+  }
+}
+.simple-list > li:before {
+  content: "\0025cf  ";
+}
+.cronological-items {
+  list-style-type: none;
+}
+.cronological-item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  page-break-inside: auto;
+}
+.cronological-item .cronological-dates,
+.cronological-item .cronological-description {
+  -webkit-flex: 1 0 100%;
+  -moz-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+}
+.cronological-item .cronological-dates .time-length {
+  font-size: 11pt;
+  font-style: italic;
+}
+.cronological-item .cronological-description {
+  min-width: 280px;
+}
+.education h4 {
+  font-style: normal;
+  font-weight: normal;
+}
