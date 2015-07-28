@@ -1,20 +1,15 @@
-{{#content}}
+{{#content}}{{#title}}
 
-#### *{{date}}{{#dateInfo}} ({{.}}){{/dateInfo}}*
-{{#title}}#### {{.}} {{#company}}/ {{.}}{{/company}}{{#location}} - {{.}}{{/location}}
-{{/title}}
-{{#description}}
 
-{{.}}
-{{/description}}
-{{#expertise}}
+### {{.}}{{#company}}
+####{{.}}{{#location}} - {{.}}{{/location}}{{/company}}{{/title}}{{#school}}
+##### {{.}}{{#location}} - {{.}}{{/location}}{{/school}}{{#date}}
+###### *{{.}}{{#dateInfo}} ({{.}}){{/dateInfo}}*{{/date}}{{#titles}}
+##### {{.}}{{/titles}}{{#description}}
 
-Related expertise: {{.}}
-{{/expertise}}
-{{#projects}}
+{{.}}{{/description}}{{#expertise}}
 
-Key projects: {{.}}
-{{/projects}}
+**Related expertise:** {{.}}{{/expertise}}{{#projects}}
 
-***
+**Key projects:** {{.}}{{/projects}}
 {{/content}}

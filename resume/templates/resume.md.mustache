@@ -1,13 +1,17 @@
 <pre>
 # {{ name }}
-## {{ title }}
-*{{ email }}*
+### {{ title }}{{#email}}
+**Email:** *{{.}}*
+{{/email}}{{#website}}
+**Portfolio:** *{{.}}*
+{{/website}}
 {{#phone_formatted}}
 {{ phone_formatted }}
 {{/phone_formatted}}
 
 {{#sections}}
-### {{ title }}
+
+## {{ title }}
 {{{ rendered_content }}}
 {{/sections}}
 </pre>
