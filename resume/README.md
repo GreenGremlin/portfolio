@@ -44,7 +44,7 @@ A passion for clean, efficient, and reliable code with an emphasis on unit-testi
 
 ### Senior Software Engineer - Front End (contractor)
 ####REI - Kent, WA
-###### *2015 - present*
+###### *2015 (4mo)*
 
 Worked on an Agile team using scrum methodologies. Participated in sprint planning, sprint retrospectives, daily stand-ups, and weekly backlog grooming.
 
@@ -53,9 +53,9 @@ Worked on an Agile team using scrum methodologies. Participated in sprint planni
 **Key projects:** shopping cart port from JSP to Backbone, checkout refactor
 
 
-### UX Developer
+### Front End Engineer
 ####Zillow - Seattle, WA
-###### *2012 – 2015 (2yr 6mo)*
+###### *2012 -&nbsp;2015 (2yr 6mo)*
 
 Worked with a small team of developers, using Agile methods, to build client-facing web tools and services. At the enterprise level, I helped drive the adoption of tools such as LESS, Mustache templates, an enterprise style-guide, and modern coding standards.
 
@@ -66,7 +66,7 @@ Worked with a small team of developers, using Agile methods, to build client-fac
 
 ### UX Developer
 ####Razor Planet - Renton, WA
-###### *2011 – 2012 (1yr 4mo)*
+###### *2011 -&nbsp;2012 (1yr 4mo)*
 
 Developed templates, plugins, and core features for a custom content management system, built on CakePHP and JQuery. Worked in small teams to design and develop custom applications such as a job board and survey engine.
 
@@ -77,7 +77,7 @@ Developed templates, plugins, and core features for a custom content management 
 
 ### Programmer Analyst
 ####Costco Wholesale - Issaquah, WA
-###### *2008 – 2011 (3yr. 1mo.)*
+###### *2008 -&nbsp;2011 (3yr. 1mo.)*
 
 Developed in-house accounting applications, services, and processes. Made heavy use of the Rational Unified Process and IBM Rational tools. Designed relational database models and wrote stored procedures.
 
@@ -87,7 +87,7 @@ Developed in-house accounting applications, services, and processes. Made heavy 
 
 
 ### Other work experience
-###### *1996 - 2008*
+###### *1996 -&nbsp;2008*
 ##### Web Developer / IT Support, Northwest Church, Federal Way, WA (1 year)
 ##### Web Developer / Dispatcher, Customized Tours, Seattle, WA (2 years)
 ##### Technical Support, University of Washington, Seattle, WA (1 year)
@@ -106,12 +106,12 @@ Developed in-house accounting applications, services, and processes. Made heavy 
 
 ### Computer Science and Math emphasis
 ##### University of Washington - Seattle, WA
-###### *2002 - 2004 (167 credits)*
+###### *2002 -&nbsp;2004 (167 credits)*
 
 
 ### Associates of Science (Engineering / Math emphasis)
 ##### Spokane Falls Community College - Spokane, WA
-###### *2000 - 2002*
+###### *2000 -&nbsp;2002*
 
 
 ### Satellite Operator Maintainer Course
