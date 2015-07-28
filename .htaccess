@@ -3,4 +3,12 @@ Options +FollowSymLinks -MultiViews
 RewriteEngine On
 RewriteBase /
 RewriteRule ^resume.([A-Za-z0-9]+)$ resume/index.php?format=$1
+
+RewriteCond %{HTTP_HOST} portfolio\.dev [NC]
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ http://portfolio.dev/resume [L,R=301]
+
+RewriteCond %{HTTP_HOST} felchlin\.net [NC]
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ http://felchlin.net/resume [L,R=301]
 </IfModule>
