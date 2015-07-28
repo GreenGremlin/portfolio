@@ -22,7 +22,7 @@ A passion for clean, efficient, and reliable code with an emphasis on unit-testi
 ### Work Experience
 
 #### *2015 - present*
-#### Senior Software Engineer - Front End (contractor)  / REI - Kent, WA
+#### Senior Software Engineer - Front End (contractor) / REI - Kent, WA
 
 Worked on an Agile team using scrum methodologies. Participated in sprint planning, sprint retrospectives, daily stand-ups, and weekly backlog grooming.
 
@@ -33,7 +33,7 @@ Key projects: shopping cart port from JSP to Backbone, checkout refactor
 ***
 
 #### *2012 – 2015 (2yr 6mo)*
-#### UX Developer  / Zillow - Seattle, WA
+#### UX Developer / Zillow - Seattle, WA
 
 Worked with a small team of developers, using Agile methods, to build client-facing web tools and services. At the enterprise level, I helped drive the adoption of tools such as LESS, Mustache templates, an enterprise style-guide, and modern coding standards.
 
@@ -44,7 +44,7 @@ Key projects: schools rewrite, home values rewrite, sitewide responsive navigati
 ***
 
 #### *2011 – 2012 (1yr 4mo)*
-#### UX Developer  / Razor Planet - Renton, WA
+#### UX Developer / Razor Planet - Renton, WA
 
 Developed templates, plugins, and core features for a custom content management system, built on CakePHP and JQuery. Worked in small teams to design and develop custom applications such as a job board and survey engine.
 
@@ -55,7 +55,7 @@ Key projects: templates, client-side image tool, online personality test
 ***
 
 #### *2008 – 2011 (3yr. 1mo.)*
-#### Programmer Analyst  / Costco Wholesale - Issaquah, WA
+#### Programmer Analyst / Costco Wholesale - Issaquah, WA
 
 Developed in-house accounting applications, services, and processes. Made heavy use of the Rational Unified Process and IBM Rational tools. Designed relational database models and wrote stored procedures.
 
@@ -66,28 +66,33 @@ Key projects: custom accounts receivable system, coupon processing
 ***
 
 #### *Other work experience (1996 - 2008)*
-#### Web Developer / IT Support, Northwest Church, Federal Way, WA (1 year)Web Developer / Dispatcher, Customized Tours, Seattle, WA (2 years)Technical Support, University of Washington, Seattle, WA (1 year)Developer / Tech Support, Icehouse Net Services, Spokane, WA (1 year)Master Control Operator, KHQ - NBC affiliate, Spokane, WA (1 year)Satellite Communications Operator/Maintainer, US Army (4 years)
+#### Web Developer / IT Support, Northwest Church, Federal Way, WA (1 year)
+#### Web Developer / Dispatcher, Customized Tours, Seattle, WA (2 years)
+#### Technical Support, University of Washington, Seattle, WA (1 year)
+#### Developer / Tech Support, Icehouse Net Services, Spokane, WA (1 year)
+#### Master Control Operator, KHQ - NBC affiliate, Spokane, WA (1 year)
+#### Satellite Communications Operator/Maintainer, US Army (4 years)
 
 ***
 
 ### Education
 
 #### *2008*
-#### IBM System i Programmer Course  / Costco Wholesale - Issaquah, WA
+#### IBM System i Programmer Course / Costco Wholesale - Issaquah, WA
 
 ***
 
 #### *2002 - 2004*
-#### Computer Science and Math emphasis (167 credits)  / University of Washington - Seattle, WA
+#### Computer Science and Math emphasis (167 credits) / University of Washington - Seattle, WA
 
 ***
 
 #### *2000 - 2002*
-#### Associates of Science (Engineering / Math emphasis)  / Spokane Falls Community College - Spokane, WA
+#### Associates of Science (Engineering / Math emphasis) / Spokane Falls Community College - Spokane, WA
 
 ***
 
 #### *1996*
-#### Satellite Operator Maintainer Course, 35 Wks  / US Army Signal School - Ft. Gordon, GA
+#### Satellite Operator Maintainer Course, 35 Wks / US Army Signal School - Ft. Gordon, GA
 
 ***
