@@ -1,7 +1,10 @@
 {{#content}}
 
-{{date}}{{#dateInfo}} ({{.}}){{/dateInfo}}
-{{#title}}{{.}}{{/title}} {{#company}} / {{.}}{{/company}}{{#location}} - {{.}}{{/location}}
+{{#title}}{{.}}{{/title}}{{#company}}
+{{.}}{{/company}}{{#school}}
+{{.}}{{/school}}{{#location}} - {{.}}{{/location}}
+{{date}}{{#dateInfo}} ({{.}}){{/dateInfo}}{{#titles}}
+  - {{.}}{{/titles}}
 {{#description}}
 
 {{.}}
@@ -15,5 +18,5 @@ Related expertise: {{.}}
 Key projects: {{.}}
 {{/projects}}
 
-----
+---
 {{/content}}

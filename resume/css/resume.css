@@ -183,7 +183,8 @@ h5 {
 .cronological-item .cronological-description {
   min-width: 280px;
 }
-.cronological-item .company {
+.cronological-item .company,
+.cronological-item .school {
   display: block;
 }
 .education h4 {

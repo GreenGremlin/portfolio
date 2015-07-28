@@ -37,7 +37,7 @@ sections:
         projects: "shopping cart port from JSP to Backbone, checkout refactor"
       - date: "2012 – 2015"
         dateInfo: "2yr 6mo"
-        title: "UX Developer"
+        title: "Front End Engineer"
         company: "Zillow"
         location: "Seattle, WA"
         description: "Worked with a small team of developers, using Agile methods, to build client-facing web tools and services. At the enterprise level, I helped drive the adoption of tools such as LESS, Mustache templates, an enterprise style-guide, and modern coding standards."
