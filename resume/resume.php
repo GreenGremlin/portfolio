@@ -40,16 +40,24 @@
             $data[ "phone_formatted" ] = preg_replace( $phone_match, $phone_replace, $data["phone"] ). "\n";
         }
 
-        $template_suffix = $format != null ? '.' . $format : '';
+        $template_suffix = $format != null ? '.' . $format : 'html';
 
         // handle unsupported formats
         if ( !file_exists( $template_dir . '/resume' . $template_suffix . $template_loader_options[ 'extension' ] ) ) {
             $template_suffix = '';
         }
 
-        foreach ( $data[ "sections" ] as &$section ) {
-            if ($section[ "type" ] == NULL) {
-                $section[ "type" ] = "section";
+        foreach ( $data[ 'sections' ] as &$section ) {
+            if ( $section[ 'type' ] == NULL ) {
+                $section[ 'type' ] = 'section';
+            }
+            if ( $section[ 'type' ] == 'chronological_list' && ( $format == 'html' || $format == 'htm' ) ) {
+
+                foreach ( $section[ 'content' ] as &$item ) {
+                    if ( $item[ 'date' ] ) {
+                        $item[ 'date' ] = str_replace( ' - ', ' -&nbsp;', $item[ 'date' ] );
+                    }
+                }
             }
 
             $partial = $mustache->loadTemplate( $section["type"] . $template_suffix );
