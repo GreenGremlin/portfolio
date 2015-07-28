@@ -1,3 +1,14 @@
+This script is used to create multiple resume formats (currently html, markdown, and plain text) from a YAML data file. Updates to the resume
+need only be added to one YAML file and all formats will reflect the updates.
+
+See:
+  * http://felchlin.net/resume.htm
+  * http://felchlin.net/resume.md
+  * http://felchlin.net/resume.txt
+
+Below is the current resume content:
+---
+
 # Jonathan Felchlin
 ### User Experience Developer
 **Email:** *jonathan@felchlin.net*
