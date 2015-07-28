@@ -1,33 +1,47 @@
-@media all and (min-width: 461px) {
-  .cronological-item {
-    -webkit-flex-wrap: nowrap;
-    -moz-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+@media screen and (min-width: 571px) {
+  .chronological-item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
   }
-  .cronological-item .cronological-dates,
-  .cronological-item .cronological-description {
-    -webkit-flex-basis: 280px;
-    -moz-flex-basis: 280px;
-    -ms-flex-basis: 280px;
-    flex-basis: 280px;
-    padding: 0 1%;
+  .chronological-item .chronological-title,
+  .chronological-item .chronological-description,
+  .chronological-item .chronological-dates {
+    padding: 0 2%;
   }
-  .cronological-item .cronological-dates {
-    -webkit-flex-basis: 120px;
-    -moz-flex-basis: 120px;
-    -ms-flex-basis: 120px;
-    flex-basis: 120px;
-    max-width: 8.12em;
+  .chronological-item .chronological-title,
+  .chronological-item .chronological-description {
+    order: 2;
+  }
+  .chronological-item .chronological-title,
+  .chronological-item .chronological-description {
+    width: 660px;
+    max-width: 75%;
+    margin-left: auto;
+  }
+  .chronological-item .chronological-dates {
+    width: 220px;
+    max-width: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     text-align: right;
     border-right: 2px solid #ccc;
   }
-  .cronological-item .cronological-dates .time-length {
+  .chronological-item .chronological-dates .time-length {
     display: block;
   }
 }
 @media print {
-  .cronological-item .cronological-dates {
+  .chronological-item .chronological-dates {
     max-width: 7.62em;
   }
 }

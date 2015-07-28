@@ -82,6 +82,9 @@ h5 {
 .inline-list {
     font-style: italic;
 }
+.inline-header {
+    font-weight: bold;
+}
 
 .resume-header {
     .flex-display;
@@ -99,10 +102,6 @@ h5 {
             display: block;
         }
     }
-}
-
-.resume-description {
-    padding: 0 @horizontal-spacing;
 }
 
 .simple-list {
@@ -129,33 +128,42 @@ h5 {
     }
 }
 
-.cronological-items {
+.chronological-items {
     list-style-type: none;
 }
-.cronological-item {
-    .flex-display;
-    .flex-flow(row wrap);
+.chronological-item {
+    display: block;
+    margin: @vertical-spacing auto;
     page-break-inside: auto;
 
-    .cronological-dates,
-    .cronological-description {
-        .flex(1 0 100%);
-    }
-
-    .cronological-dates {
-        // min-width: @dates-width;
+    .chronological-dates {
 
         .time-length {
             font-size: 11pt;
             font-style: italic;
         }
     }
-    .cronological-description {
-        min-width: @description-width;
-    }
     .company,
     .school {
         display: block;
+        font-style: italic;
+        font-weight: normal;
+    }
+
+    @media @small-screen {
+        margin-bottom: @vertical-spacing * 2;
+
+        .chronological-dates {
+
+            .time-length {
+                &:before {
+                    content: '(';
+                }
+                &:after {
+                    content: ')';
+                }
+            }
+        }
     }
 }
 
@@ -164,4 +172,3 @@ h5 {
         font-style: normal;
     }
 }
-

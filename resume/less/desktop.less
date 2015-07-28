@@ -2,18 +2,37 @@
 @import "flexbox";
 @import "variables";
 
-@media all and (min-width: (@dates-width + @description-width + (@page-margin-small * 2) + 1px)) {
-    .cronological-item {
-        .flex-wrap(nowrap);
+@media @not-small-screen {
+    .chronological-item {
+        .flex-display;
+        .flex-wrap(wrap);
+        position: relative;
 
-        .cronological-dates,
-        .cronological-description {
-            .flex-basis(@description-width);
+        .chronological-title,
+        .chronological-description,
+        .chronological-dates {
             padding: 0 @horizontal-spacing/2;
         }
-        .cronological-dates {
-            .flex-basis(@dates-width);
-            max-width: 8.12em;
+
+        .chronological-title,
+        .chronological-description {
+            order: 2;
+        }
+
+        .chronological-title,
+        .chronological-description {
+            width: @description-width;
+            max-width: @description-max-width;
+            margin-left: auto;
+        }
+        .chronological-dates {
+            width: @dates-width;
+            max-width: @dates-max-width;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+
             text-align: right;
             border-right: 2px solid #ccc;
 
@@ -24,8 +43,8 @@
     }
 }
 @media print {
-    .cronological-item {
-        .cronological-dates {
+    .chronological-item {
+        .chronological-dates {
             max-width: 7.62em;
         }
     }
