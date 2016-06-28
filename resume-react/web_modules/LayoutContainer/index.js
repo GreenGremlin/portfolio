@@ -6,6 +6,7 @@ import Footer from '../Footer'
 
 import './reset.global.css'
 import './index.global.less'
+import './hightlightjs.global.css'
 import styles from './index.less'
 
 // Todo: move this elsewhere

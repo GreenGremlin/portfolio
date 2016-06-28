@@ -3,11 +3,9 @@ title: Sequence Partitioned Gallery Layout
 date: 2016-06-28
 layout: Post
 ---
-[JSPerf](http://jsperf.com/balanced-list-partitioner)
-
 ### Breakpoint partitioning v1
 
-```
+``` javascript
 function BreakpointPartition(imageRatioSequence, expectedRowCount) {
     if (imageRatioSequence.length <= 1)
         return [imageRatioSequence];
@@ -487,3 +485,5 @@ export default function listPartition(items, partitionCount, valueFn) {
   return partitions.map(p => items.slice(p.start, p.end));
 }
 ```
+
+See the [JSPerf](http://jsperf.com/balanced-list-partitioner)
