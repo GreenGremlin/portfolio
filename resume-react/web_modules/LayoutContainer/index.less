@@ -1,0 +1,27 @@
+@import "./variables";
+
+.layout {
+  /* placeholder */
+}
+
+.content {
+  max-width: 60rem;
+  margin: auto;
+  padding: @page-margin-medium;
+
+  @media @small-screen {
+    padding: @page-margin-small;
+  }
+
+  @media screen {
+    &.print-preview{
+      max-width: 511.2pt + 2 * 50.4pt;
+      padding: @page-margin-large;
+    }
+  }
+  
+  @media print {
+    max-width: 100%;
+    padding: 0;
+  }
+}

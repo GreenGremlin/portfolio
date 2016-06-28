@@ -1,0 +1,29 @@
+@line-height: 1.5em;
+@block-margin: 0.75rem;
+@vertical-spacing: 20px;
+@horizontal-spacing: 4%;
+
+@page-margin-small: 30px;
+@page-margin-medium: 40px;
+@page-margin-large: 50.4pt;
+@page-margin-print: 16pt;
+
+@small-width: 570px;
+@medium-width: 768px;
+@large-width: 1024px;
+@max-page-width: 880px;
+@not-small-width: (@small-width + 1px);
+
+@small-screen: ~"screen and (max-width: @{small-width})";
+@not-small-screen: ~"screen and (min-width: @{not-small-width})";
+@medium-screen: ~"screen and (max-width: @{medium-width})";
+@large-screen: ~"screen and (min-width: @{large-width})";
+
+@dates-ratio: 0.25;
+
+@dates-width: @max-page-width * @dates-ratio;
+@dates-max-width: @dates-ratio * 100%;
+@description-width: @max-page-width - @dates-width;
+@description-max-width: 100% - @dates-max-width;
+
+@header-border-color: #38761d;

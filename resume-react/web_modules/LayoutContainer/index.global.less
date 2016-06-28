@@ -1,0 +1,70 @@
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+}
+@page {
+  margin: 0.75in 0.75in 0.5in;
+}
+
+html {
+  font-size: 16px;
+}
+body, p, h1, h2, h3, h4, h5, h4, h5, h6 {
+  font-size: 100%;
+  line-height: @line-height;
+}
+body {
+  font-family: "Open Sans";
+  color: #000;
+  max-width: @max-page-width;
+  margin: 0 auto;
+}
+
+a {
+  color: #3A3ADB;
+}
+
+p, h3, h4, h5, h4, h5, h6, li {
+  margin-bottom: @block-margin;
+  page-break-inside: avoid;
+}
+h3, h4 {
+  page-break-after: avoid;
+}
+
+h1 {
+  font-size: 2.25em;
+  line-height: 1.334em;
+  margin: 0;
+  font-family: "Muli";
+  vertical-align: baseline;
+}
+h2 {
+  font-size: 1.125em;
+  line-height: 1.334em;
+  margin: 0;
+  padding: 0 0 10pt;
+  color: #666666;
+  font-style: italic;
+  font-weight: 600;
+}
+h3 {
+  margin: 0 0 0.5em;
+  padding: @block-margin 0 (@block-margin / 3);
+  color: #434343;
+  font-size: 1.25em;
+  font-family: "Enriqueta";
+  border-bottom: 2px solid @header-border-color;
+}
+h4 {
+  padding-top: 0pt;
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 600;
+}
+h5 {
+  // font-family: "Varela Round";
+  font-size: 1em;
+  font-weight: normal;
+}
