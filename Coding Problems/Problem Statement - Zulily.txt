@@ -1,0 +1,50 @@
+Problem Statement
+=================
+
+You are given a list of tasks as an integer array, task_costs. Every i-th element of task_costs represents a task and requires task_costs[i] seconds to complete. All tasks listed in the array are independent of other tasks.
+
+It is required to finish all the tasks independently and as soon as possible. You are given a single worker robot to start taking the tasks and finish them one at a time. However if you like, you can divide the worker robot in two. Each resulting robot can then be further divided into two and so on. There is a cost, in seconds, of dividing a robot in two, represented by robot_divide_cost.
+
+You can assign an independent task to any available robot, however you can't interrupt or divide a robot while it is working on the assigned task. At the same time you can't assign a task to any robot while its in the process of getting divided.
+
+To keep things simple you can't allow multiple robots to work on the same task. At any given time only one robot can work on a task and finish it. Once any particular robot finishes a task it can't be assigned any further tasks.
+
+Given a list of tasks and cost of dividing a robot, find the least amount of time to finish all tasks.
+
+Constraints
+===========
+
+1 <= tasks <= 50
+1 <= seconds required to complete a single task <= 3600
+1 <= robot_divide_cost <= 3600
+
+Input Format
+============
+
+Line 1: comma separated list of integers representing task_costs array
+Line 2: robot_divide_cost
+
+Output Format
+=============
+
+Line 1: minimal cost required to complete all tasks
+
+Sample Input
+============
+
+2000,200,20,2
+2
+
+Sample Output
+=============
+
+2002
+
+Explanation
+===========
+
+One possible way to finish all tasks in minimal time would be as follows:
+
+We start with one robot and immediately split the robot in two (robot_A & robot_B) to start working on task 1 and task 2. Since the cost of dividing the robot is 2 seconds, we will have two robots working on first two tasks after 2 seconds. After 202 seconds from the start, robot_B will be finished and can be split again.
+
+We split robot_B consuming another 2 seconds. At 204 seconds from start we get robot_C and immediately assign task 3 to robot_C. However we can't use robot_B again as it has already finished one task and have to split it again to get robot_D. At 206 seconds from start we get robot_D and assign it task 4.

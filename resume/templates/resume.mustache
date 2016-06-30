@@ -17,15 +17,21 @@
                 <h2>{{ title }}</h2>
             </div>
             <div class="header-section header-right contact-info">
-                <a href="mailto:{{ email }}">{{ email }}</a>
+                <a href="mailto:{{ email }}" data-label="{{ email }}">email</a>
                 {{#phone_formatted}}
-                <a href="tel:+{{ phone }}">{{ phone_formatted }}</a>
+                <a href="tel:+{{ phone }}" data-label="{{ phone }}">{{ phone_formatted }}</a>
                 {{/phone_formatted}}
+                {{#linked_in}}
+                <a href="//www.linkedin.com/in/{{ linked_in }}" target="_blank" data-label="linkedin.com/in/{{ linked_in }}">LinkedIn</a>
+                {{/linked_in}}
+                {{#github}}
+                <a href="//github.com/{{ github }}" target="_blank" data-label="github.com/{{ github }}">GitHub</a>
+                {{/github}}
             </div>
         </header>
         {{#sections}}
         <div class="resume-content">
-            <h3>{{ title }}</h3></p>
+            <h3 class="section-title">{{ title }}</h3></p>
             {{{ rendered_content }}}
         </div>
         {{/sections}}

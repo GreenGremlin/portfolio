@@ -1,0 +1,116 @@
+<!--
+    Accordian widget exercise for Jonathan Felchlin
+
+    Ideas to improve the widget:
+        -
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMDB - Create a wireframe</title>
+        <meta name="description" content="A wireframe exercise for IMDB">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html, body, div, header, aside, main, nav, article, footer {
+                display: block;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-size: 100%;
+            }
+            html {
+                font-size: 16px;
+                font-family: Arial, Helvetica;
+            }
+            .section {
+                max-width: 400px;
+                margin: 0 auto;
+                border: 1px solid #000;
+                border-top: none;
+            }
+            .section:first-child {
+                border-top: 1px solid #000;
+            }
+            .section__header {
+                padding: 20px;
+                background: #ccc;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .section__header:hover {
+                background: #999;
+            }
+            .section__content {
+                max-height: 0px;
+                overflow: hidden;
+                left: -9999px;
+                transition: max-height 0.5s, left 0s 0.5s;
+            }
+            .section__content__inner {
+                padding: 40px 20px;
+            }
+            .section--active .section__header {
+                border-bottom: 1px solid #000;
+            }
+            .section--active .section__content {
+                max-height: 500px;
+                left: auto;
+                transition: max-height 1s, left 0s 1s;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="section">
+            <header class="section__header">Header #1</header>
+            <article class="section__content">
+                <div class="section__content__inner">
+                    Content related to header #1
+                </div>
+            </article>
+        </section>
+        <section class="section">
+            <header class="section__header">Header #2</header>
+            <article class="section__content">
+                <div class="section__content__inner">
+                    Content related to header #2
+                </div>
+            </article>
+        </section>
+        <section class="section">
+            <header class="section__header">Header #3</header>
+            <article class="section__content">
+                <div class="section__content__inner">
+                    Content related to header #3
+                </div>
+            </article>
+        </section>
+
+        <script>
+            var ACTIVE_SECTION_CLASS = 'section--active';
+            var headers = document.getElementsByClassName('section__header');
+
+            function onHeaderClick(e) {
+                var activeSections;
+                var nextSection = e.currentTarget.parentNode;
+                if (nextSection.classList.contains(ACTIVE_SECTION_CLASS)) {
+                    nextSection.classList.remove(ACTIVE_SECTION_CLASS);
+                }
+                else {
+                    activeSections = document.getElementsByClassName(ACTIVE_SECTION_CLASS);
+                    if (activeSections.length) {
+                        activeSections[0].classList.remove(ACTIVE_SECTION_CLASS);
+                    }
+                    nextSection.classList.add(ACTIVE_SECTION_CLASS);
+                }
+            };
+            for (var i = 0; i < headers.length; i++) {
+                headers[i].onclick = onHeaderClick;
+            }
+        </script>
+        <!--
+        <script src="//code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
+        -->
+    </body>
+</html>

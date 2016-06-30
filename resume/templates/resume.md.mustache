@@ -1,0 +1,20 @@
+# {{ name }}
+### {{ title }}{{#email}}
+**Email:** *{{.}}*
+{{/email}}{{#website}}
+[Portfolio]({{website}})
+{{/website}}{{#phone_formatted}}
+{{ phone_formatted }}
+{{/phone_formatted}}{{#linked_in}}
+[LinkedIn](http://www.linkedin.com/in/{{ linked_in }})
+{{/linked_in}}{{#github}}
+[GitHub](http://github.com/{{ github }})
+{{/github}}
+
+{{#sections}}
+
+## {{ title }}
+
+{{{ rendered_content }}}
+{{/sections}}
+

@@ -1,0 +1,127 @@
+<!--
+    Wireframe exercise for Jonathan Felchlin
+
+    Ideas to improve the wireframe:
+        - Make it responsive (I made it go full-width at 500px)
+        - Find a way to take advantage of wider monitors.
+        - Ideally I would avoid hard coded heights, instead I would
+          let the content determine the heights of each section.
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMDB - Create a wireframe</title>
+        <meta name="description" content="A wireframe exercise for IMDB">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html, body, div, header, aside, main, nav, article, footer {
+                display: block;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-size: 100%;
+            }
+            html {
+                font-size: 16px;
+            }
+            .header__logo,
+            .header__banner,
+            .sidebar__news,
+            .sidebar__ad,
+            .main__navigation,
+            .main__text,
+            .footer {
+                border: 1px solid #000;
+            }
+            .header,
+            .content,
+            .footer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            .header__logo,
+            .sidebar {
+                -ms-flex-preferred-size: 232px;
+                flex-basis: 232px;
+                margin-right: 11px;
+            }
+            .header__banner,
+            .main {
+                -ms-flex-preferred-size: 557px;
+                flex-basis: 557px;
+            }
+            .header__logo,
+            .header__banner {
+                min-height: 82px;
+                margin-bottom: 11px;
+            }
+            .sidebar,
+            .main {
+                margin-bottom: 15px;
+            }
+            .sidebar__news {
+                min-height: 210px;
+                margin-bottom: 33px;
+            }
+            .sidebar__ad {
+                min-height: 205px;
+            }
+            .main__navigation {
+                min-height: 49px;
+                margin-bottom: 15px;
+            }
+            .main__text {
+                min-height: 384px;
+            }
+            .footer {
+                min-height: 44px;
+            }
+            @media (max-width: 500px) {
+                .header,
+                .content,
+                .footer {
+                    display: block;
+                }
+                .header__logo,
+                .sidebar {
+                    margin-right: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__logo"></div>
+            <div class="header__banner"></div>
+        </header>
+
+        <div class="content">
+            <aside class="sidebar">
+                <div class="sidebar__news">
+                </div>
+                <div class="sidebar__ad">
+                </div>
+            </aside>
+
+            <main class="main">
+                <nav class="main__navigation">
+                </nav>
+
+                <article class="main__text">
+
+                </article>
+            </main>
+        </div>
+
+        <footer class="footer">
+        </footer>
+    </body>
+</html>

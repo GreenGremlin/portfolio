@@ -5,6 +5,29 @@
 
     use Symfony\Component\Yaml\Parser;
 
+    function renderSection($mustache, $section, $template_suffix) {
+        if ( $section[ 'type' ] == NULL ) {
+            $section[ 'type' ] = 'section';
+        }
+        if ( $section[ 'type' ] == 'chronological_list' && ( $format == 'html' || $format == 'htm' ) ) {
+
+            foreach ( $section[ 'content' ] as &$item ) {
+                if ( $item[ 'date' ] ) {
+                    $item[ 'date' ] = str_replace( ' - ', ' -&nbsp;', $item[ 'date' ] );
+                }
+            }
+        }
+        if ( $section[ 'sections' ] ) {
+            foreach ( $section[ 'sections' ] as &$child_section ) {
+                $child_section = renderSection($mustache, $child_section, $template_suffix);
+            }
+        }
+        $partial = $mustache->loadTemplate( $section[ 'type' ] . $template_suffix );
+        $section[ 'rendered_content' ] = $partial->render( $section );
+
+        return $section;
+    }
+
     function renderResume ( $data, $format ) {
 
         $data_dir = dirname(__FILE__) . '/data/';
@@ -48,20 +71,7 @@
         }
 
         foreach ( $data[ 'sections' ] as &$section ) {
-            if ( $section[ 'type' ] == NULL ) {
-                $section[ 'type' ] = 'section';
-            }
-            if ( $section[ 'type' ] == 'chronological_list' && ( $format == 'html' || $format == 'htm' ) ) {
-
-                foreach ( $section[ 'content' ] as &$item ) {
-                    if ( $item[ 'date' ] ) {
-                        $item[ 'date' ] = str_replace( ' - ', ' -&nbsp;', $item[ 'date' ] );
-                    }
-                }
-            }
-
-            $partial = $mustache->loadTemplate( $section["type"] . $template_suffix );
-            $section[ "rendered_content" ] = $partial->render( $section );
+            $section = renderSection($mustache, $section, $template_suffix);
         }
 
         $tpl = $mustache->loadTemplate( 'resume'.$template_suffix );

@@ -35,6 +35,10 @@ body {
     }
 }
 
+a {
+    color: #3A3ADB;
+}
+
 p, h3, h4, h5, h4, h5, h6, li {
     margin-bottom: @block-margin;
     page-break-inside: avoid;
@@ -79,9 +83,6 @@ h5 {
     font-weight: normal;
 }
 
-.inline-list {
-    font-style: italic;
-}
 .inline-header {
     font-weight: bold;
 }
@@ -97,11 +98,25 @@ h5 {
     .header-left {
         padding-right: @horizontal-spacing;
     }
+    .header-right {
+        text-align: right;
+    }
     .contact-info {
         a {
             display: block;
+            text-decoration: none;
         }
     }
+}
+
+.nested-section {
+    .resume-content {
+        margin-bottom: 1rem;
+    }
+}
+
+.sub-section-title {
+    font-style: normal;
 }
 
 .simple-list {
@@ -125,6 +140,19 @@ h5 {
         &:before {
             content: "\0025cf  ";
         }
+    }
+}
+
+.inline-list {
+    font-style: italic;
+    list-style-type: none;
+    padding: 0 @horizontal-spacing/2;
+
+    > li {
+        display: inline-block;
+        padding: 0.1rem 0.2rem;
+        border-bottom: 1px solid #ccc;
+        margin: 0 0.2rem;
     }
 }
 

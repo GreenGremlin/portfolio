@@ -1,0 +1,133 @@
+Jonathan Felchlin
+Senior Software Engineer
+
+Email: jonathan@felchlin.net
+Phone: 253-394-2507
+Portfolio: http://www.felchlin.net
+LinkedIn: http://www.linkedin.com/in/jonathanfelchlin
+GitHub: http://github.com/GreenGremlin
+
+
+Professional Profile
+====
+9 years enterprise software engineering experience
+Full stack Javascript developer
+Strong understanding of advanced programming concepts including: functional programming, prototypal inheritance, promises, closures, generators
+A passion for clean, efficient, well tested code
+
+
+Areas of Expertise
+====
+
+Languages
+----
+Javascript (ES5, ES6, ES7), Python, Java, SQL, PHP
+
+Libraries / Platforms
+----
+React, Node, Express, Alt, React Router, Backbone, JQuery, SASS, LESS, JSP
+
+Tools
+----
+webpack, lodash, Babel, npm, git, gulp, Jinja, handlebars, Agile / scrum
+
+Testing
+----
+Mocha, Chai, Sinon, Karma, Nightwatch, Selenium
+
+
+Work Experience
+====
+
+Senior Software Engineer - Full Stack
+Expertise.com - Seattle, WA
+2016 (10mo)
+
+Led front-end development of a CRM platform for small businesses. Designed and built a universal (isomorphic) React application. Wrote database schema, queries, and API endpoints using SQLAlchemy and Python.
+
+Related expertise: React, Node.js, webpack, Mocha, Chai, Sinon, SASS, Python, SQLAlchemy, Express 
+
+---
+
+Senior Software Engineer - Front End (contract)
+REI - Kent, WA
+2015 (4mo)
+
+Worked on an Agile team using scrum methodologies. Participated in sprint planning, sprint retrospectives, daily stand-ups, and weekly backlog grooming.
+
+Related expertise: Javascript, Backbone, unit tests (Mocha, Chai, and Sinon), Knockout, lodash, JSP, Node JS, Gulp, git, Vagrant/Virtualbox, Selenium, Atlassian tools
+
+Key projects: shopping cart port from JSP to Backbone, checkout refactor
+
+---
+
+Front End Engineer
+Zillow - Seattle, WA
+2012 - 2015 (2yr 6mo)
+
+Worked with a small team of developers, using Agile methods, to build client-facing web tools and services. At the enterprise level, I helped drive the adoption of tools such as LESS, Mustache templates, an enterprise style-guide, and modern coding standards.
+
+Related expertise: Javascript, responsive LESS/CSS, Python, Java, Git, YUI, TurboGears, Node
+
+Key projects: schools rewrite, home values rewrite, sitewide responsive navigation, Zillow.com homepage redesign
+
+---
+
+UX Developer
+Razor Planet - Renton, WA
+2011 - 2012 (1yr 4mo)
+
+Developed templates, plugins, and core features for a custom content management system, built on CakePHP and JQuery. Worked in small teams to design and develop custom applications such as a job board and survey engine.
+
+Related expertise: Javascript, JQuery, CSS, PHP, SVN, CakePHP
+
+Key projects: templates, client-side image tool, online personality test
+
+---
+
+Programmer Analyst
+Costco Wholesale - Issaquah, WA
+2008 - 2011 (3yr. 1mo.)
+
+Developed in-house accounting applications, services, and processes. Made heavy use of the Rational Unified Process and IBM Rational tools. Designed relational database models and wrote stored procedures.
+
+Related expertise: RPG IV, Java, SQL, DB2, UML, MS Visio, RUP
+
+Key projects: custom accounts receivable system, coupon processing
+
+---
+
+Other work experience
+1996 - 2008
+  - Web Developer / IT Support, Northwest Church, Federal Way, WA (1 year)
+  - Web Developer / Tour Guide / Dispatcher, Customized Tours, Seattle, WA (2 years)
+  - Computing Services Support, University of Washington, Seattle, WA (1 year)
+  - Tech Support / Developer, Icehouse Net Services, Spokane, WA (1 year)
+  - Master Control Operator, KHQ - NBC affiliate, Spokane, WA (1 year)
+  - Satellite Communications Operator/Maintainer, US Army (4 years)
+
+
+Education
+====
+
+IBM System i Programmer Course
+Costco Wholesale - Issaquah, WA
+2008
+
+---
+
+Computer Science and Math emphasis
+University of Washington - Seattle, WA
+2002 - 2004 (167 credits)
+
+---
+
+Associates of Science (Engineering / Math emphasis)
+Spokane Falls Community College - Spokane, WA
+2000 - 2002
+
+---
+
+Satellite Operator Maintainer Course
+US Army Signal School - Ft. Gordon, GA
+1996 (35 Wks)

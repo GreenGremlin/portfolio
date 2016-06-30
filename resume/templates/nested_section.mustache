@@ -1,0 +1,14 @@
+<div class="nested-section">
+    {{#content}}
+    <p>{{.}}</p>
+    {{/content}}
+
+    {{#sections}}
+    <div class="resume-content">
+        {{#title}}
+        <h4 class="sub-section-title">{{.}}</h4>
+        {{/title}}
+        {{{ rendered_content }}}
+    </div>
+    {{/sections}}
+</div>

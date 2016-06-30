@@ -4,6 +4,9 @@
 @page {
   margin: 0.75in 0.75in 0.5in;
 }
+html {
+  16px;
+}
 body,
 p,
 h1,
@@ -14,7 +17,7 @@ h5,
 h4,
 h5,
 h6 {
-  font-size: 16px;
+  font-size: 100%;
   line-height: 1.5em;
 }
 body {
@@ -41,6 +44,9 @@ body {
     padding: 0;
   }
 }
+a {
+  color: #3A3ADB;
+}
 p,
 h3,
 h4,
@@ -49,7 +55,7 @@ h4,
 h5,
 h6,
 li {
-  margin-bottom: 0.75em;
+  margin-bottom: 0.75rem;
   page-break-inside: avoid;
 }
 h3,
@@ -74,7 +80,7 @@ h2 {
 }
 h3 {
   margin: 0 0 0.5em;
-  padding: 0.75em 0 0.25em;
+  padding: 0.75rem 0 0.25rem;
   color: #434343;
   font-size: 1.25em;
   font-family: "Enriqueta";
@@ -121,8 +127,19 @@ h5 {
 .resume-header .header-left {
   padding-right: 4%;
 }
+.resume-header .header-right {
+  text-align: right;
+}
 .resume-header .contact-info a {
   display: block;
+  text-decoration: none;
+}
+.nested-section .resume-content {
+  margin-bottom: 0.75rem;
+}
+.sub-section-title {
+  margin-bottom: 0.25rem;
+  font-style: normal;
 }
 .simple-list {
   display: -webkit-flex;
@@ -153,6 +170,22 @@ h5 {
 }
 .simple-list > li:before {
   content: "\0025cf  ";
+}
+
+.inline-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0 2%;
+}
+.inline-list > li {
+  display: inline-block;
+  padding: 0 0.6rem;
+  margin: 0;
+  border-right: 1px solid #ddd;
+}
+.inline-list > li:last-child {
+  border-right: none;
 }
 .chronological-items {
   list-style-type: none;
@@ -185,4 +218,28 @@ h5 {
 }
 .education h4 {
   font-style: normal;
+}
+@media print{
+  html {
+    font-size: 90%;
+  }
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .contact-info a {
+    color: #000;
+    font-weight: bold;
+    font-size: 0.85em;
+    line-height: 1.6em;
+  }
+  .contact-info a:after{
+    content: attr(data-label);
+    display: block;
+    font-weight: normal;
+  }
+  .resume-header .header-right {
+    text-align: left;
+  }
 }
